@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>first page</title>
+  <style>
+  .para1{ 
+  position:absolute;
+  top:400px;
+  left:420px;
+  color:white;
+  
+  }
+  .para2{ 
+  position:absolute;
+  top:450px;
+  left:270px;
+  color:white;
+  }
+  .para3{ 
+  position:absolute;
+  top:480px;
+  left:370px;
+  color:white;
+  }
+  
+  
+  .para4{ 
+  position:absolute;
+  top:930px;
+  left:780px;
+  color:white;
+  }
+  .para5{ 
+  position:absolute;
+  top:990px;
+  left:790px;
+  color:white;
+  }
+  .para6{ 
+  position:absolute;
+  top:1020px;
+  left:770px;
+  color:white;
+  }
+  .para7{ 
+  position:absolute;
+  top:1050px;
+  left:800px;
+  color:white;
+  }
+  
+  .para8{ 
+  position:absolute;
+  top:1420px;
+  left:270px;
+  color:white;
+  }
+  .para9{ 
+  position:absolute;
+  top:1480px;
+  left:200px;
+  color:white;
+  }
+  .para10{ 
+  position:absolute;
+  top:1510px;
+  left:230px;
+  color:white;
+  }
+  .para11{ 
+  position:absolute;
+  top:1540px;
+  left:270px;
+  color:white;
+  }
+  
+  
+  .para12{ 
+  position:absolute;
+  top:1420px;
+  left:850px;
+  color:white;
+  }
+  .para13{ 
+  position:absolute;
+  top:1480px;
+  left:790px;
+  color:white;
+  }
+  .para14{ 
+  position:absolute;
+  top:1510px;
+  left:760px;
+  color:white;
+  }
+  .para15{ 
+  position:absolute;
+  top:1540px;
+  left:760px;
+  color:white;
+  }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script>
+$(document).ready(function() {
+	
+	$("#show").click(function(){
+        $("p").show();
+        
+    });
+	   $('p').mouseenter(function() {
+	       $(this).animate({
+	           height: '+=10px'
+	       });
+	   });
+	   $('p').mouseleave(function() {
+	       $(this).animate({
+	           height: '-=10px'
+	       }); 
+	   });
+	   $('p').click(function() {
+	       $(this).toggle(1000);
+	   }); 
+	});
+
+</script>
+  
+  
+  </head>
+  
+  
+<body>
+<div class="jumbotron">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfjBoC7e0KFCCKz_a_EbQjpV04TA2KztoWjSQC-h56ov4Te9sB7lXfOUM"> 
+    
+ <nav class="navbar navbar-default">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+         <div>
+              <ul class="nav navbar-nav">
+                 <li><a href="index.html">Home</a></li>
+                 <li class="active"><a href="#">Innovations</a></li>
+                 <li><a href="http://www.adaptavant.com/people">People</a></li>
+                 <li><a href="http://www.adaptavant.com/global">Global</a></li>
+                 <li><a href="http://www.adaptavant.com/culture">Culture</a></li>
+                 <li><a href="http://www.adaptavant.com/career">Careers</a></li>
+                 <li><a href="login.jsp">Login</a></li>
+              </ul>
+         </div>
+    </div>
+ </nav>
+        <p id="red"><img src="http://www.vyrex.com/img/it-company-1.jpg" width="1350" height="500" /></p>
+        <p id="blue"><img src="http://ipmcghana.com/wp-content/uploads/2014/07/banner-1.jpg" width="1350" height="500" /></p>
+        <p id="yellow"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9Cej_x6TF7IX33enq5ReM4vFZPp7rjs70fCBlC1-QpF4Jm5o0A" width="1350" height="500" /></p>
+        <p id="green"><img src="http://www.indiatech.co.in/img/photography/004.jpg" width="1350" height="500" /></p>
+        <span id="show"><img src="http://www.honeycombsoftwares.com/images/company.jpg" width="1350" height="500" /></span>
+        
+        
+ 
+</div><!-- first div completes here -->
+</body>
+</html>
+

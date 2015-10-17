@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        alert("The paragraph was clicked.");
+    });
+});
+$(document).ready(function() {
+	
+	$("#show").click(function(){
+        $("div").show();
+        
+    });
+	   $('div').mouseenter(function() {
+	       $(this).animate({
+	           height: '+=10px'
+	       });
+	   });
+	   $('div').mouseleave(function() {
+	       $(this).animate({
+	           height: '-=10px'
+	       }); 
+	   });
+	   $('div').click(function() {
+	       $(this).toggle(1000);
+	   }); 
+	});
+
+</script>
+</head>
+<body>
+<p>Click on this paragraph.</p>
+
+
+        <div id="red"><img src="http://www.exactitsolutions.com/wp-content/uploads/2014/02/Slide15.jpg" /></div>
+        <div id="blue"><img src="http://www.exactitsolutions.com/wp-content/uploads/2014/02/Slide15.jpg" /></div>
+        <div id="yellow"><img src="http://www.exactitsolutions.com/wp-content/uploads/2014/02/Slide15.jpg" /></div>
+        <div id="green"><img src="http://www.exactitsolutions.com/wp-content/uploads/2014/02/Slide15.jpg" /></div>
+        <button id="show"><img src="http://www.exactitsolutions.com/wp-content/uploads/2014/02/Slide15.jpg" /></button>
+        
+        
+        
+</body>
+</html>

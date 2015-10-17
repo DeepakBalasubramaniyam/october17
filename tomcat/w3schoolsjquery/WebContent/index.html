@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        alert("The paragraph was clicked.");
+    });
+});
+
+/*$(document).ready(function(){
+    $("div").click(function(){
+        alert("The div was clicked.");
+    });
+});*/
+$(document).ready(function() {
+	   $('div').mouseenter(function() {
+	       $(this).animate({
+	           height: '+=10px'
+	       });
+	   });
+	   $('div').mouseleave(function() {
+	       $(this).animate({
+	           height: '-=10px'
+	       }); 
+	   });
+	   $('div').click(function() {
+	       $(this).toggle(1000);
+	   }); 
+	});
+
+</script>
+</head>
+<body>
+<p>Click on this paragraph.</p>
+
+
+
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        
+        
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>first page</title>
+  <style>
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script>
+$(document).ready(function() {
+	
+	$("#show").click(function(){
+        $("p").show();
+        
+    });
+	   $('p').mouseenter(function() {
+	       $(this).animate({
+	           height: '+=10px'
+	       });
+	   });
+	   $('p').mouseleave(function() {
+	       $(this).animate({
+	           height: '-=10px'
+	       }); 
+	   });
+	   $('p').click(function() {
+	       $(this).toggle(1000);
+	   }); 
+	});
+
+</script>
+  
+  
+  </head>
+  
+  
+<body>
+<div class="jumbotron">
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfjBoC7e0KFCCKz_a_EbQjpV04TA2KztoWjSQC-h56ov4Te9sB7lXfOUM"> 
+    
+ <nav class="navbar navbar-default">
+   <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+         <div>
+              <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+						<li class="active"><a href="#">KrishnaImages</a></li>
+						<li><a href="KrishnaWithRadhaImages.html">KrishnaWithRadhaImages</a></li>
+						
+                 </ul>
+         </div>
+    </div>
+ </nav>
+        <p id="red"><img src="http://allgodwallpapers.com/server13/photos/trakWZw3tFw7hM~/44135_Full-Size-More-baby-krishna-balgopal-janamashtami-wallpapers_1600x1024.jpg" width="1350" height="500" /></p>
+        <p id="blue"><img src="http://media1.santabanta.com/full1/Hinduism/Lord%20Krishna/lor21v.jpg" width="1350" height="500" /></p>
+        <p id="yellow"><img src="http://hdwallpaperbook.com/wp-content/gallery/baby-krishna-photo/baby+krishna-1r.jpg" width="1350" height="500" /></p>
+        <p id="green"><img src="http://www.hdwallpapersdownloadz.com/wp-content/uploads/2014/03/Bal-Krishna-Janmashtami-Beautiful-HD-Wallpapers.jpg" width="1350" height="500" /></p>
+        <span id="show"><img src="http://www.hindugodwallpaper.com/images/gods/zoom/807_bal_krishna_wallpaper_01.jpg" width="1350" height="500" /></span>
+        
+        
+ 
+</div><!-- first div completes here -->
+</body>
+</html>
+
